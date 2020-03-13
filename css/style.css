@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    background-color: #3399cc;
+    border: solid 15px #2b81ac;
+    height: 100vh;
+}
+
+/* header */
+
+h1 {
+    font-size: 1.5em;
+    color: white;
+    padding: 30px 0 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* main */
+
+.container {
+    width: 100%;
+    max-width: 970px;
+    min-width: 360px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    font-size: 0;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border-left: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+ul {
+    height: 100%;
+    position: relative;
+    pointer-events: none;
+}
+
+li {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    display: inline-block;
+    width: 25%;
+    height: 25%;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+    
+}
+
+li p {
+    opacity: 0.8;
+    padding-top: 10px;
+    font-size: 1.2em;
+}
+
+li:first-child, li:nth-child(9n) {
+    display: inline-block;
+    width: 50%;
+}
+
+li:last-child {
+    display: inline-block;
+    width: 100%;
+    background-color: #669;
+}
+
+li:first-child {
+   background-color: #39c;
+}
+
+li:nth-child(2n) {
+    background-color: #3cc;
+}
+
+li:nth-child(3n) {
+    background-color: #969;
+}
+
+li:nth-child(4n) {
+    background-color: #c24747;
+}
+
+li:nth-child(5n) {
+    background-color: #e2674a;
+}   
+
+li:nth-child(6n) {
+    background-color: #ffcc66;
+} 
+
+li:nth-child(7n) {
+    background-color: #9c9;
+}
+
+li:nth-child(8n) {
+    background-color: #699;
+}
+
+li:nth-child(9n) {
+    background-color: #c69;
+}
+
+li:nth-child(9n) {
+    background-color: #396;
+}
+
+footer {
+    font-size: 1em;
+    color: white;
+    padding: 20px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+li:after {
+    display: block;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+ul > * {
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+ul:hover > * {
+    opacity: 0.5;
+}
+
+ul:hover > *:hover {
+    opacity: 1;
+}
